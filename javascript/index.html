@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <title>Javascript</title>
+    </header>
+    <body>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <script>
+            const minhaPromise = () => {
+                return new Promise((resolver, reject)=>{
+                    var xhr = new XMLHttpRequest()
+                    xhr.open("GET", "https://api.github.com/users/octocat")
+                    xhr.send(null);
+                    xhr.onreadystatechange = () =>{
+                        if(xhr.readyState === 4){
+                            if(xhr.status === 200){
+                                resolver(JSON.parse(xhr.responseText));
+                            }else{
+                                reject("Erro na requisição");
+                            }
+                        }
+                    }
+                });
+            }
+
+            minhaPromise().then((response)=>{
+                console.log(response)
+            }).catch((error)=>{
+                console.log(error)
+            });
+
+            // axios
+            axios.get("https://api.github.com/users/octocat")
+            .then((resolver)=>{
+                console.log(resolver)
+            }).catch((error)=>{
+                console.log(error)
+            });
+        </script>
+    </body>
+
+</html>
