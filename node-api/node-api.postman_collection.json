@@ -1,0 +1,119 @@
+{
+	"info": {
+		"_postman_id": "7fa29477-d214-4585-a81e-027a8aefb6c9",
+		"name": "node-api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "store",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"title\": \"ReackJS\",\n\t\"description\": \"Biblioteca para criar aplicações interativas\",\n\t\"url\": \"http://github.com/facebook/react\"\n}"
+				},
+				"url": {
+					"raw": "{{base_url}}/products",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"products"
+					]
+				},
+				"description": "Curso de nodeJs Rocketseat"
+			},
+			"response": []
+		},
+		{
+			"name": "update",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"title\": \"React native\"\n}"
+				},
+				"url": {
+					"raw": "{{base_url}}/products/5e02435a23c77a2a6a6c32f0",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"products",
+						"5e02435a23c77a2a6a6c32f0"
+					]
+				},
+				"description": "Curso de nodeJs Rocketseat"
+			},
+			"response": []
+		},
+		{
+			"name": "show",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				},
+				"description": "Curso de nodeJs Rocketseat"
+			},
+			"response": []
+		},
+		{
+			"name": "index",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				},
+				"description": "Curso de nodeJs Rocketseat"
+			},
+			"response": []
+		},
+		{
+			"name": "delete",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"title\": \"ReackJS\",\n\t\"description\": \"Biblioteca para criar aplicações interativas\",\n\t\"url\": \"http://github.com/facebook/react\"\n}"
+				},
+				"url": {
+					"raw": "{{base_url}}/products",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"products"
+					]
+				},
+				"description": "Curso de nodeJs Rocketseat"
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
