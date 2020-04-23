@@ -18,7 +18,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\t\"title\": \"ReackJS\",\n\t\"description\": \"Biblioteca para criar aplicações interativas\",\n\t\"url\": \"http://github.com/facebook/react\"\n}"
+					"raw": "{\n\t\"title\": \"Explicação\",\n\t\"description\": \"Novo conceito de desenvolvimento, baseado em API.\",\n\t\"url\": \"https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=2ahUKEwiT-sm-vtvmAhXhI7kGHU-4CrUQFjAAegQIARAB&url=https%3A%2F%2Fbecode.com.br%2Fo-que-e-api-rest-e-restful%2F&usg=AOvVaw3qVn57yMp0lckxuL4Spm4O\"\n}"
 				},
 				"url": {
 					"raw": "{{base_url}}/products",
@@ -46,16 +46,16 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\t\"title\": \"React native\"\n}"
+					"raw": "{\n\t\"title\": \"React\"\n}"
 				},
 				"url": {
-					"raw": "{{base_url}}/products/5e02435a23c77a2a6a6c32f0",
+					"raw": "{{base_url}}/products/5ea1baca2c4f5f216e3882f0",
 					"host": [
 						"{{base_url}}"
 					],
 					"path": [
 						"products",
-						"5e02435a23c77a2a6a6c32f0"
+						"5ea1baca2c4f5f216e3882f0"
 					]
 				},
 				"description": "Curso de nodeJs Rocketseat"
@@ -68,7 +68,13 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": ""
+					"raw": "{{base_url}}/products",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"products"
+					]
 				},
 				"description": "Curso de nodeJs Rocketseat"
 			},
@@ -80,7 +86,14 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": ""
+					"raw": "{{base_url}}/products/5ea1baca2c4f5f216e3882f0",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"products",
+						"5ea1baca2c4f5f216e3882f0"
+					]
 				},
 				"description": "Curso de nodeJs Rocketseat"
 			},
@@ -89,7 +102,7 @@
 		{
 			"name": "delete",
 			"request": {
-				"method": "POST",
+				"method": "DELETE",
 				"header": [
 					{
 						"key": "Content-Type",
@@ -99,15 +112,16 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\t\"title\": \"ReackJS\",\n\t\"description\": \"Biblioteca para criar aplicações interativas\",\n\t\"url\": \"http://github.com/facebook/react\"\n}"
+					"raw": ""
 				},
 				"url": {
-					"raw": "{{base_url}}/products",
+					"raw": "{{base_url}}/products/5e02436c32689b2a88fa623c",
 					"host": [
 						"{{base_url}}"
 					],
 					"path": [
-						"products"
+						"products",
+						"5e02436c32689b2a88fa623c"
 					]
 				},
 				"description": "Curso de nodeJs Rocketseat"
